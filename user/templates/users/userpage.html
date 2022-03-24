@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link rel="stylesheet" href="userpage.css" />
+    <style>
+      body {
+        background-color: powderblue;
+      }
+      h1 {
+        color: blue;
+        text-align: center;
+        font-family: sans-serif;
+      }
+      li {
+        position: relative;
+        left: 35vw;
+        font-family: sans-serif;
+        top:8vw
+
+      }
+    </style>
+  </head>
+  <body>
+    <h1>USER LIST</h1>
+
+    <ol>
+      {% for user in userset %}
+      <li>USERNAME: {{user}} PROFESSION: {{user.job}}:  <a href="projectspage.html/{{user.id}}">VIEW PROJECTS<a/> </li><br/>
+      {% endfor %}
+    </0l>
+  </body>
+</html>
